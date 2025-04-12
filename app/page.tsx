@@ -1,8 +1,12 @@
 "use client"
+import { Header } from "./components/header";
+
 
 const Page = () => {
   return (
-    <div></div>
+    <div>
+      <Header/>
+    </div>
   );
 }
 
