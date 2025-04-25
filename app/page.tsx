@@ -2,6 +2,7 @@
 import { Header } from "./components/header";
 import { PautasVotacao } from './components/pautasVotacao';
 import { DetalheSessao } from './components/detalhesSessao';
+import { NovaSessao } from "./components/novaSessao";
 
 
 const Page = () => {
@@ -9,7 +10,8 @@ const Page = () => {
     <div>
       <Header/>
       {/* <PautasVotacao /> */}
-      <DetalheSessao />
+      {/* <DetalheSessao /> */}
+      <NovaSessao />
     </div>
   );
 }

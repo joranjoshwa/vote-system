@@ -43,7 +43,7 @@ export const DetalheSessao = () => {
 
             <div className="flex justify-between items-center mt-10 mb-4">
                 <h2 className="text-lg font-semibold ">Sessões de Votação</h2>
-                <button className="bg-cyan-400 text-black font-bold px-4 py-2 rounded hover:bg-cyan-300">+ Nova Sessão</button>
+                <button className="bg-cyan-400 text-black font-bold px-3 py-2 rounded hover:bg-cyan-300">+ Nova Sessão</button>
             </div>
 
             <div className="grid md:grid-cols-2 gap-4">
