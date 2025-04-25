@@ -1,10 +1,6 @@
 export const NovaSessao = () => {
     return (
         <div className="flex-1 flex justify-center items-center px-4 py-12 bg-black text-white">
-            {/* <div className="w-full max-w-xl mb-4 text-left">
-                <div className="text-sm text-cyan-400 hover:underline cursor-pointer">← Voltar para a Pauta</div>
-            </div>
-             */}
             <div className="bg-zinc-900 p-8 rounded-xl w-full max-w-5xl shadow-lg h-full">
                 <div className="text-sm text-cyan-400 hover:underline flex items-center mb-6">← Voltar para a Pauta</div>
 
