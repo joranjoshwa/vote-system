@@ -1,9 +1,16 @@
-export const NovaPauta = () => {
+type Props = {
+    onNavigate: (page: 'pautas' | 'detalhes' | 'novaSessao' | 'novaPauta' | 'validaCPF') => void;
+  };
+
+export const NovaPauta = ({ onNavigate }: Props) => {
     return (
         <div className="min-h-screen flex flex-col bg-black text-white">
             <div className="flex-1 flex flex-col items-center  px-4 py-8">
                 <div className="w-full max-w-2xl mb-4 text-left">
-                    <div className="text-sm text-cyan-400 hover:underline">← Voltar para Pautas</div>
+                    <button 
+                        className="text-sm text-cyan-400 hover:underline"
+                        onClick={() => onNavigate('pautas')}
+                    >← Voltar para Pautas</button>
                 </div>
 
                 <div className="bg-zinc-900 w-full max-w-2xl p-8 rounded-xl shadow-lg">

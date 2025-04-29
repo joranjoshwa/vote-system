@@ -1,8 +1,12 @@
-export const NovaSessao = () => {
+type Props = {
+    onNavigate: (page: 'pautas' | 'detalhes' | 'novaSessao' | 'novaPauta' | 'validaCPF') => void;
+};
+
+export const NovaSessao = ({ onNavigate }: Props) => {
     return (
         <div className="flex-1 flex justify-center items-center px-4 py-12 bg-black text-white">
             <div className="bg-zinc-900 p-8 rounded-xl w-full max-w-5xl shadow-lg h-full">
-                <div className="text-sm text-cyan-400 hover:underline flex items-center mb-6">← Voltar para a Pauta</div>
+                <button className="text-sm text-cyan-400 hover:underline flex items-center mb-6" onClick={() => onNavigate('pautas')}>← Voltar para a Pauta</button>
 
                 <h2 className="text-2xl font-bold mb-2">Criar Nova Sessão de Votação</h2>
                 <p className="text-sm text-white/80 mb-6">Pauta: <strong>Aprovação do orçamento anual</strong></p>

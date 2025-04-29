@@ -2,7 +2,11 @@
 import { Home, FileText, UserCheck, PlusCircle } from 'lucide-react';
 import './style.css';
 
-export const Header = () => {
+type Props = {
+    onNavigate: (page: 'pautas' | 'detalhes' | 'novaSessao' | 'novaPauta' | 'validaCPF') => void;
+};
+
+export const Header = ({ onNavigate }: Props) => {
 
 
     return (
@@ -14,17 +18,17 @@ export const Header = () => {
             <div className="buttons">
                 <div className="button button-active">
                     <Home className="icon" />
-                    <span>Pautas</span>
+                    <button onClick={() => onNavigate('pautas')}>Pautas</button>
                 </div>
 
                 <div className="button">
                     <PlusCircle className="icon" />
-                    <span>Nova Pauta</span>
+                    <button onClick={() => onNavigate('novaPauta')}>Nova Pauta</button>
                 </div>
 
                 <div className="button">
                     <UserCheck className="icon" />
-                    <span>Validar CPF</span>
+                    <button onClick={() => onNavigate('validaCPF')}>Validar CPF</button>
                 </div>
 
             </div>
